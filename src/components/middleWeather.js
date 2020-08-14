@@ -19,6 +19,7 @@ export default function MiddleWeather(props) {
       <p>{days[dayConverter(dt)]}</p>
       <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
       {props.weather.rain && <p>{props.weather.rain} мм</p>}
+      {props.weather.snow && <p>{props.weather.snow} мм</p>}
       <p>{Math.floor(day)} </p>
       <p>{Math.floor(night)}</p>
     </div>

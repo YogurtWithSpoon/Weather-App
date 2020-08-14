@@ -22,9 +22,23 @@ class App extends React.Component{
   }
   
   currentInfo(){
+    let months = [
+      "Января",
+      "Ферваля",
+      "Марта",
+      "Апреля",
+      "Майя",
+      "Июня",
+      "Июля",
+      "Августа",
+      "Сентября",
+      "Октября",
+      "Ноября",
+      "Декабря",
+    ];
     const current = new Date()
     const currentTime = `${current.getHours()}:${current.getMinutes()}`
-    const currentDate = `${current.getDate()}/${current.getMonth() + 1}`
+    const currentDate = `${current.getDate()} ${months[current.getMonth()]}`
     return currentTime + " " + currentDate
   }
 
@@ -49,6 +63,7 @@ class App extends React.Component{
  
   render(){
     const {isLoading} = this.state;
+    
     return (
       <div className="App">
         <p>Сейчас {this.currentInfo()}</p>
