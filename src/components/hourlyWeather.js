@@ -6,7 +6,7 @@ function hourlyWeather(props){
   const {data} = props;
   return (
     <div className="hourly_weather">
-    {data.map(item => <MiniWeather key={Math.random().toFixed(4)} weather={item}/>)}
+    {data.map(item => <MiniWeather key={Math.random().toFixed(5)} weather={item}/>)}
     </div>
   )
 }
