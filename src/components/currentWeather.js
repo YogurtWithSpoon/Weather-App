@@ -15,7 +15,7 @@ const currentWeather = (props) => {
       {data.rain ? <p>{data.rain} мм</p> : null}
       {data.snow ? <p>{data.snow} мм</p> : null}
       <p>Ощущается как {Math.round(data.feels_like)} &#8451;</p>
-      <p></p>
+      <p>Ветер {} {data.wind_speed} м/с</p>
       <p>Облачность {data.clouds} %</p>
       <p>Влажность {data.humidity} %</p>
       <p>Давление {pressureConverter(data.pressure)} мм. рт. ст.</p>
