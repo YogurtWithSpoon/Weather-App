@@ -12,7 +12,7 @@ const Clock = () => {
 
   return (
     <p>{time}</p>
-  );
+  )
 };
 
 export default Clock;
