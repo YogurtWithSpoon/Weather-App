@@ -8,6 +8,7 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 body{
@@ -15,14 +16,18 @@ body{
   font-weight: 300;
 }
 
-.App{
+body{
   background:url(../containers/img/background.jpg) center center/cover;
-  padding: 30px 0px 0px 50px;
+  padding-bottom: 40px;
+}
+
+.container{
+  padding: 30px 30px 0px 50px;
 }
 
 .header,.city_select{
   font-family: 'Circe Bold';
-  font-size:61px;
+  font-size:2.2em;
   color: #fff;
 }
 
@@ -30,14 +35,167 @@ body{
   background:none;
   border:none;
   outline:none;
+  color:#fff;
 }
 
+option{
+  color:#000;
+  background:rgba(0,0,0,.1);
+  border:none;
+  font-size: 20px;
+}
 .city_select:focus,.city_select:active{
   border:none;
 }
 
 .cards{
   display:flex;
+  justify-content: space-between;
   width:100%;
-  height: 500px;
+  margin-top:20px;
+  min-height: 600px;
+  flex-wrap: wrap;
+}
+
+.today_info{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 25%;
+  height: 550px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .current_weather{
+    width:28%;
+    margin-bottom: 50px;
+  }
+  .daily_weather{
+    width: 69%;
+  }
+  .today_info{
+    order: -1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 250px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .clock, .current_month{
+    width: 49%;
+    height: 100%;
+  }
+  .current_month{
+    flex-direction: row;
+  }
+  .current_text{
+    font-size: 3em;
+    margin-left: 20px;
+  }
+  .current_text:nth-child(1){
+    display:none;
+  }
+  .current_number{
+    font-size: 3em;
+  }
+  .header{
+    font-size: 2.2em;
+  }
+  .today_info{
+    height: 150px;
+  }
+  .clock p{
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .daily_weather {
+    width: 57%;
+  } 
+}
+
+@media only screen and (max-width: 740px) {
+  .container{
+    padding: 10px 10px;
+  }
+  .header{
+    font-size: 2em;
+  }
+  .city_select{
+    font-size: 1.3em;
+  }
+  .clock p{
+    font-size: 3em;
+  }
+  .current_text{
+    font-size: 2em;
+    margin-left: 20px;
+  }
+  .cards{
+    width:100%;
+  }
+  .current_weather{
+    min-width:100%;
+    margin-bottom: 20px;
+  }
+  .daily_weather{
+    min-width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container{
+    padding: 10px 10px;
+  }
+  .header{
+    font-size: 2em;
+  }
+  .city_select{
+    font-size: 1.3em;
+  }
+  .clock p{
+    font-size: 3em;
+  }
+  .current_text{
+    font-size: 2em;
+    margin-left: 20px;
+  }
+  .cards{
+    width:100%;
+  }
+  .current_weather{
+    min-width:100%;
+    margin-bottom: 20px;
+  }
+  .daily_weather{
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header{
+    font-size: 1.5em;
+  }
+  .current_month{
+    flex-direction: column;
+  }
+  .current_text{
+    font-size:1.5em;
+    margin:0;
+  }
+  .today_info{
+    height: 125px;
+  }
+  .daily_weather{
+    padding: 5px;
+    font-size: 0.6em;
+  }
+  .day_name{
+    font-size:1.3em;
+  }
+  .daily_header{
+    font-size: 1.7em;
+  }
 }

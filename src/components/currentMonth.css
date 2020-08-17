@@ -1,0 +1,21 @@
+.current_month{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20px;
+  height: 48%;
+  width: 100%;
+}
+
+.current_text{
+  font-size: 3em;
+  font-family: 'Circe Bold';
+}
+
+.current_number{
+  font-size: 6em;
+  font-weight: 600;
+  color: #d93f3f;
+}

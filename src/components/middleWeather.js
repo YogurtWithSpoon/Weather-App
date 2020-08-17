@@ -16,13 +16,16 @@ export default function MiddleWeather(props) {
     "Воскресенье",
   ];
   return (
-    <div className="day_weather">
-      <p>{days[dayConverter(dt)]}</p>
-      <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
-      {props.weather.rain && <p>{props.weather.rain} мм</p>}
-      {props.weather.snow && <p>{props.weather.snow} мм</p>}
-      <p>{Math.floor(day)} </p>
-      <p>{Math.floor(night)}</p>
-    </div>
+    <React.Fragment>
+      <div className="day_weather">
+        <p className="day_name">{days[dayConverter(dt)]}</p>
+        <div className="day_status">
+          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
+        </div>
+        <p className="day_temp">{Math.floor(day)} </p>
+        <p className="day_temp">{Math.floor(night)}</p>
+      </div>
+      <hr />
+    </React.Fragment>
   );
 }

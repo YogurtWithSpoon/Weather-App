@@ -1,0 +1,16 @@
+.hour_weather{
+  color:#fff;
+  width:80px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.hour_degree{
+  font-family: 'Circe Bold';
+}
+
+.hour{
+  font-size: 23px;
+}

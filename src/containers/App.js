@@ -3,6 +3,7 @@ import CurrentWeather from '../components/currentWeather'
 import HourlyWeather from '../components/hourlyWeather';
 import DailyWeather from '../components/dailyweather';
 import Clock from '../components/clock';
+import CurrentMonth from '../components/currentMonth'
 
 import './App.css';
 
@@ -21,26 +22,6 @@ class App extends React.Component {
       lon: 30.315868,
     }
     this.onChangeHanlder = this.onChangeHanlder.bind(this)
-  }
-
-  currentMonth() {
-    let months = [
-      "Января",
-      "Ферваля",
-      "Марта",
-      "Апреля",
-      "Майя",
-      "Июня",
-      "Июля",
-      "Августа",
-      "Сентября",
-      "Октября",
-      "Ноября",
-      "Декабря",
-    ];
-    const current = new Date()
-    const currentDate = `${current.getDate()} ${months[current.getMonth()]}`
-    return currentDate
   }
 
   onChangeHanlder(event) {
@@ -64,23 +45,27 @@ class App extends React.Component {
 
   render() {
     const { isLoading } = this.state;
-
+    
     return (
       <div className="App">
-        <div className="header">
-          Прогноз погоды в 
-          <select className="city_select" onChange={this.onChangeHanlder}>
-            <option value="59.939095 30.315868">Санкт-Петербурге</option>
-            <option value="55.753215 37.622504">Москве</option>
-            <option value="45.035470 38.975313">Краснодаре</option>
-            <option value="55.159897 61.402554">Челябинске</option>
-          </select>
-        </div>
-        <div className="cards">
-          {isLoading && <CurrentWeather data={this.state.current} />}
-          {isLoading && <DailyWeather data={this.state.daily} />}
-          <Clock />
-          <p>{this.currentMonth()}</p>
+        <div className="container">
+          <div className="header">
+            Прогноз погоды в 
+            <select className="city_select" onChange={this.onChangeHanlder}>
+              <option value="59.939095 30.315868">Санкт-Петербурге</option>
+              <option value="55.753215 37.622504">Москве</option>
+              <option value="45.035470 38.975313">Краснодаре</option>
+              <option value="55.159897 61.402554">Челябинске</option>
+            </select>
+          </div>
+          <div className="cards">
+            {isLoading && <CurrentWeather data={this.state.current} />}
+            {isLoading && <DailyWeather data={this.state.daily} />}
+            <div className="today_info">
+              <CurrentMonth />
+              <Clock />
+            </div>
+          </div>
         </div>
         {isLoading && <HourlyWeather data={this.state.hourly} />}
       </div>

@@ -1,4 +1,31 @@
 .daily_weather{
   display:flex;
   flex-direction: column;
+  width:45%;
+  min-width: 365px;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 20px;
+  height: 550px;
+}
+
+.daily_header{
+  display:flex;
+  justify-content: space-between;
+  font-family: 'Circe Bold';
+  font-size: 20px;
+}
+
+.daily_header p:nth-child(1){
+  width:60%;
+}
+
+.daily_header p:nth-child(2){
+  width:20%;
+  text-align: center;
+}
+
+.daily_header p:nth-child(3){
+  width:20%;
+  text-align: center;
 }

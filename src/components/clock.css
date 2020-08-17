@@ -1,0 +1,14 @@
+.clock{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  height: 48%;
+  width: 100%;
+}
+
+.clock p{
+  font-family: 'Circe Bold';
+  font-size: 7em;
+}
