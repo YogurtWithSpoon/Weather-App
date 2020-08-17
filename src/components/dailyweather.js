@@ -1,6 +1,6 @@
 import React from 'react';
 import MiddleWeather from '../components/middleWeather';
-
+import './dailyweather.css'
 const dailyWeather = props => {
   return (
     <div className="daily_weather">

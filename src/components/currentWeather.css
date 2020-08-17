@@ -1,0 +1,91 @@
+.current_weather{
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  min-width: 260px;
+}
+
+.main_info{
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 45%;
+}
+
+.current_temp{
+  display:flex;
+  align-items: flex-end;
+  font-family: 'Circe Bold';
+}
+
+.number_celsius{
+  margin-right: 10px;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+.celsius{
+  margin:0;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.main_info_icon{
+  align-self: center;
+}
+
+.current_disc{
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.add_info{
+  margin-top:10px;
+  height: 55%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add_info_section{
+  display:flex;
+  justify-content: space-between;
+}
+
+.add_info_desc{
+  width:55%;
+  text-align: start;
+}
+
+.add_icon{
+  width:5%;
+  text-align: center;
+}
+
+.add_info_number{
+  width:10%;
+  text-align: center;
+}
+
+.add_info_units{
+  width: 12%;
+  text-align: center;
+}
+
+.add_info_section:nth-child(4){
+  align-items: center;
+}
+
+.add_info_sun{
+  text-align: start;
+  width:35%;
+}
+
+.add_info_number_sun{
+  width:47%;
+  text-align: center;
+}
+
+

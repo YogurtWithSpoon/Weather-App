@@ -67,20 +67,22 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Clock />
-        <p>{this.currentMonth()}</p>
-        <h3>
-          Прогноз погоды в <br />
+        <div className="header">
+          Прогноз погоды в 
           <select className="city_select" onChange={this.onChangeHanlder}>
             <option value="59.939095 30.315868">Санкт-Петербурге</option>
             <option value="55.753215 37.622504">Москве</option>
             <option value="45.035470 38.975313">Краснодаре</option>
             <option value="55.159897 61.402554">Челябинске</option>
           </select>
-        </h3>
-        {isLoading && <CurrentWeather data={this.state.current} />}
+        </div>
+        <div className="cards">
+          {isLoading && <CurrentWeather data={this.state.current} />}
+          {isLoading && <DailyWeather data={this.state.daily} />}
+          <Clock />
+          <p>{this.currentMonth()}</p>
+        </div>
         {isLoading && <HourlyWeather data={this.state.hourly} />}
-        {isLoading && <DailyWeather data={this.state.daily} />}
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import { dayConverter } from "../converter/converter";
+import './middleWeather.css';
 
 export default function MiddleWeather(props) {
   const { dt } = props.weather;
