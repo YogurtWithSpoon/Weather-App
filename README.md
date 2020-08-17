@@ -1,2 +1,2 @@
 Small weather App builded with React and weatherall API
-![alt text](https://www.dropbox.com/s/5ylzn7esz4nlss7/WeatherApp.png?dl=0)
+![alt text](https://previews.dropbox.com/p/thumb/AA5lH8e9sgHWAAEi_ZgT2A6bMn-5tcZpGoyhLfP2GCWumdTCejYUsZwJzGBEQEcIuNSavlRphnI0eoqh_9LtNKeqOI6fWq3ZRBhvVBO11i10FE2_SxLgxKmm7rTW1VFGoJhQD9G2VA6X8otFFzTyKwA0YzuDqcPOPBPloJw9u93kbE4EL2haKJahuJvCQfeZCKT2DlE2GscLSCeckxVoZJjOp404A-lwBRKToi3_RaImhizH2193QZloKofGGCXave4XwPEmCgJVSR_U6FYD8sgcXFXNzz3gmcqIpcJXfOpw5oAZn_mJ0eBvljiJvt8yOJ3sSzsl_cmkRGwlwiTIK-9qQM8iIhdL3ovE3r2dNfLSRQ/p.png)
