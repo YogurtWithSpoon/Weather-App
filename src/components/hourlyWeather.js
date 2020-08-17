@@ -27,8 +27,8 @@ function hourlyWeather(props) {
 
   return (
     <div className="hourly_weather">
-      <button class="button left" onClick={buttonLeft}>
-        <i class="fas fa-arrow-circle-left"></i>
+      <button className="button left" onClick={buttonLeft}>
+        <i className="fas fa-arrow-circle-left"></i>
       </button>
       <div className="content_slider">
         <div className="content">
@@ -37,8 +37,8 @@ function hourlyWeather(props) {
           ))}
         </div>
       </div>
-      <button class="button right" onClick={buttonRight}>
-        <i class="fas fa-arrow-circle-right"></i>
+      <button className="button right" onClick={buttonRight}>
+        <i className="fas fa-arrow-circle-right"></i>
       </button>
     </div>
   );
