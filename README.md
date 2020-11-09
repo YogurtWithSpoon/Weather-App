@@ -6,8 +6,8 @@
 * Current time and date
 * Detailed forecast for 24 hours
 
-### Stack
-* OpenWeatherMap Api for information  | [link]()
-* React for User Interface
+### Used
+* OpenWeatherMap Api for information  | [link](https://openweathermap.org/api)
+* Bootstraped with React-Create-App | [link](https://github.com/facebook/create-react-app)
 
 [Deploy link](http://f0302262.xsph.ru/weatherReact/)
